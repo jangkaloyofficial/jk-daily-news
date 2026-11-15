@@ -44,233 +44,63 @@ details .less{display:none}details[open] .less{display:inline}details[open] .mor
 .end h2{font:800 24px/1.2 var(--f-d);margin:12px 0 4px}.end p{margin:0;color:var(--ink2)}
 .end a{display:inline-block;margin:14px 4px 0;font:700 13px/1 var(--f-m);color:var(--ink);border:2px solid var(--ink);padding:10px 14px;border-radius:999px;text-decoration:none}
 a:focus-visible,summary:focus-visible{outline:2px solid var(--sec,var(--ink));outline-offset:3px}
-@media (prefers-reduced-motion:reduce){*{transition:none!important}html{scroll-behavior:auto}}</style></head><body><div class="wrap">
+@media (prefers-reduced-motion:reduce){*{transition:none!important}html{scroll-behavior:auto}}:root{--p5:#B8325F;--p6:#1F6F8B;--p5d:#F3CADA;--p6d:#C5E1EA}
+@media (prefers-color-scheme:dark){:root{--p5:#F08DB0;--p6:#6CC3DD;--p5d:#4E2333;--p6d:#1D4350}}
+[data-part="5"]{--sec:var(--p5);--sec-dim:var(--p5d)}[data-part="6"]{--sec:var(--p6);--sec-dim:var(--p6d)}
+.mast .meta b{background:var(--ink);color:var(--paper);padding:2px 6px;border-radius:4px;white-space:nowrap}
+.readcount{font:700 11px/1 var(--f-m);letter-spacing:1px;text-transform:uppercase;color:var(--ink2);margin-top:6px;text-align:right}
+.short ol{list-style:none;margin:0;padding:0;display:grid;gap:10px}.short li a{display:flex;gap:10px;text-decoration:none;color:inherit}
+.short .tn{flex:0 0 26px;height:26px;border-radius:50%;background:var(--hl-ink);color:var(--hl);display:grid;place-items:center;font:800 14px/1 var(--f-d)}
+.short b{display:block;line-height:1.25}.short em{display:block;font-style:normal;font-weight:400;font-size:14px;line-height:1.35;margin-top:2px}
+.sec-line{margin:-4px 0 12px;font-weight:700;line-height:1.35;border-left:4px solid var(--sec);padding-left:10px}
+.post-head .hype{margin-left:auto;font-size:13px;letter-spacing:-2px;white-space:nowrap}
+.media.photo.g1{background:linear-gradient(135deg,var(--sec),var(--sec-dim))}.media.photo.g2{background:radial-gradient(90% 120% at 80% 80%,var(--sec),var(--sec-dim))}
+.media.photo.g3{background:repeating-linear-gradient(45deg,var(--sec-dim) 0 22px,var(--sec) 22px 24px)}
+.blk.term{border-left-style:dashed}
+.readbtn{display:block;width:calc(100% - 28px);margin:0 14px 14px;padding:11px;border:2px solid var(--rule);border-radius:10px;background:transparent;color:var(--ink2);font:700 14px/1 var(--f-b);cursor:pointer}
+.readbtn .r1{display:none}.post.is-read .readbtn{border-color:var(--sec);color:var(--sec)}.post.is-read .readbtn .r0{display:none}.post.is-read .readbtn .r1{display:inline}
+.post.is-read h3,.post.is-read .cap{opacity:.55}
+.startbtn{display:block;width:100%;margin:14px 0 0;padding:16px;border:3px solid var(--ink);border-radius:12px;background:var(--ink);color:var(--paper);font:800 18px/1 var(--f-d);cursor:pointer}
+.stbar,.stnav{display:none}body.st{overflow:hidden}body.st::after{content:"";position:fixed;inset:0;background:var(--paper);z-index:40}
+body.st .post.cur{position:fixed;inset:0;z-index:50;max-width:560px;margin:0 auto;border:0;border-radius:0;overflow-y:auto;padding:calc(54px + env(safe-area-inset-top,0px)) 0 78px}
+body.st .post.cur .media{cursor:pointer}body.st .post.cur .readbtn{display:none}body.st .post.cur h3,body.st .post.cur .cap{opacity:1}
+body.st .stbar{display:block;position:fixed;top:0;left:0;right:0;z-index:60;max-width:560px;margin:0 auto;background:var(--card);padding:calc(8px + env(safe-area-inset-top,0px)) 12px 4px}
+.stseg{display:flex;gap:4px}.stseg i{flex:1;height:4px;border-radius:2px;background:var(--rule)}.stseg i.on{background:var(--sec)}
+.strow{display:flex;align-items:center;justify-content:space-between;margin-top:2px;font:700 11px/1 var(--f-m);letter-spacing:1px;text-transform:uppercase;color:var(--ink2)}
+.strow button{border:0;background:transparent;color:var(--ink);font-size:20px;line-height:1;padding:6px 8px;cursor:pointer}
+body.st .stnav{display:flex;gap:8px;position:fixed;bottom:0;left:0;right:0;z-index:60;max-width:560px;margin:0 auto;padding:10px 12px calc(10px + env(safe-area-inset-bottom,0px));background:var(--card);border-top:1px solid var(--rule)}
+.stnav button{flex:1;padding:14px;border-radius:12px;border:2px solid var(--ink);background:var(--card);color:var(--ink);font:700 15px/1 var(--f-b);cursor:pointer}.stnav #stnext{background:var(--ink);color:var(--card)}.warnbox{margin:14px 0 0;font-size:13px;border:1px dashed var(--rule);border-radius:8px;padding:8px 10px;color:var(--ink2)}.warnbox p{margin:2px 0}</style></head><body><div class="wrap">
 <header class="mast"><div class="top"><span>JK Edition · No. 319</span><span>Feed · Daily</span></div>
-<h1>Daily <mark>News</mark></h1><p class="meta">Sun · Nov 15, 2026 · 24 stories · tap a circle to jump</p></header>
-<nav class="bar" aria-label="Sections"><div class="circles"><a class="circle" href="#ai" data-part="1" data-target="ai"><span class="ring"><span>🤖</span></span><small>AI</small></a><a class="circle" href="#pc" data-part="2" data-target="pc"><span class="ring"><span>💻</span></span><small>PC Parts</small></a><a class="circle" href="#stocks" data-part="3" data-target="stocks"><span class="ring"><span>📈</span></span><small>Stocks</small></a><a class="circle" href="#money" data-part="4" data-target="money"><span class="ring"><span>💰</span></span><small>Money Radar</small></a></div><div class="prog" aria-hidden="true"><i id="prog"></i></div></nav>
-<section class="short"><h2>The short version</h2><ul><li><span>🤖</span>Anthropic's IPO highlights AI safety, competition and fairness rule debates</li><li><span>💻</span>Intel's unreleased Core Ultra 7 260K appears in Newegg prebuilt PCs.</li><li><span>📈</span>Nvidia faces multiple analyst downgrades ahead of its November 17 earnings as CEO turmoil deepens</li><li><span>💰</span>Open-source AI code review tool from Alibaba launches, offering fast defect detection</li></ul><p>Only have 20 seconds? You're done. Everything else is optional.</p></section>
-<section class="sec" id="ai" data-part="1">
-<header class="sec-head"><span class="sec-em">🤖</span><div><p class="eyebrow">Section · 8 stories</p><h2>AI</h2></div></header><article class="post" data-part="1">
-<header class="post-head"><span class="av">🤖</span><div class="who"><b>Source</b><span>AI policy · 1 of 24</span></div></header>
-<h3>Anthropic IPO Raises Safety and Competition Concerns</h3>
-<div class="media stat"><div class="stat-num">$1.5</div><div class="stat-cap">AI policy</div></div>
-<p class="cap">Anthropic filed for a $1.5‑$2 trillion IPO, prompting calls for yearly public model weight releases.</p>
-<details><summary><span class="more">See more</span><span class="less">See less</span></summary>
-<div class="detail"><div class="blk"><p class="lbl">📰 What happened</p><p>Anthropic announced its intention to go public with a valuation between $1.5 and $2 trillion on Oct 26. Professors Lenox and Cowan propose that AI firms release model weights annually to boost safety, competition and fairness. The move follows market jitters, including a 13% drop in Alphabet’s value. Current AI governance relies on patchy rules like the EU AI Act and California’s SB 53.</p></div><div class="blk"><p class="lbl">🎯 Why it matters to you</p><p>Filipino builders need clear safety standards and open models to safely integrate frontier AI into custom PC projects.</p></div><div class="blk do"><p class="lbl">✅ What you can do</p><p>Watch for Anthropic’s IPO filing details and consider using open‑source models for experimentation.</p></div>
-<a class="src" href="https://news.darden.virginia.edu/articles/anthropics-ipo-makes-a-solution-for-safety-competition-and-fairness-more-urgent" target="_blank" rel="noopener">Read the full story on the source ↗</a>
-</div></details></article>
-<article class="post" data-part="1">
-<header class="post-head"><span class="av">🤖</span><div class="who"><b>TechCrunch</b><span>Regulation · 2 of 24</span></div></header>
-<h3>NY RAISE Act Targets Frontier AI Labs</h3>
-<div class="media stat"><div class="stat-num">$1M</div><div class="stat-cap">Regulation</div></div>
-<p class="cap">New York’s AI safety law requires large developers to register and publish safety frameworks.</p>
-<details><summary><span class="more">See more</span><span class="less">See less</span></summary>
-<div class="detail"><div class="blk"><p class="lbl">📰 What happened</p><p>The RAISE Act, effective early 2027, mandates frontier AI firms with &gt;$500 M revenue—like Anthropic and OpenAI—to register by Jan 1, 2027, publish safety frameworks, report critical incidents within 72 hours, and issue transparency reports. The Office of Digital Innovation, Governance, Integrity, and Trust (DIGIT) will enforce the law, with penalties up to $1 million for a first violation and $3 million for repeat offenses.</p></div><div class="blk"><p class="lbl">🎯 Why it matters to you</p><p>Compliance requirements may affect tool availability and pricing for developers building AI‑enhanced PC workflows.</p></div><div class="blk do"><p class="lbl">✅ What you can do</p><p>Visit New York’s registration portal to ensure any AI services you use are compliant.</p></div>
-<a class="src" href="https://techcrunch.com/2026/11/10/openai-anthropic-face-new-oversight-as-new-yorks-ai-safety-law-takes-effect" target="_blank" rel="noopener">Read the full story on TechCrunch ↗</a>
-</div></details></article>
-<article class="post" data-part="1">
-<header class="post-head"><span class="av">🤖</span><div class="who"><b>Source</b><span>Compliance · 3 of 24</span></div></header>
-<h3>NY Opens Registration Portal for AI Labs</h3>
-<div class="media stat"><div class="stat-num">$1M</div><div class="stat-cap">Compliance</div></div>
-<p class="cap">Frontier AI developers must sign up for the RAISE Act compliance portal by early 2027.</p>
-<details><summary><span class="more">See more</span><span class="less">See less</span></summary>
-<div class="detail"><div class="blk"><p class="lbl">📰 What happened</p><p>New York launched a registration portal for large frontier AI developers, including Anthropic and OpenAI, with a deadline of Jan 1, 2027. The RAISE Act requires publishing safety frameworks, 72‑hour incident reporting, and public model transparency reports. Oversight will be handled by DIGIT, and violations can attract $1 million to $3 million fines.</p></div><div class="blk"><p class="lbl">🎯 Why it matters to you</p><p>Knowing which AI services are registered helps you choose reliable tools for building and monetizing AI projects on your PC.</p></div><div class="blk do"><p class="lbl">✅ What you can do</p><p>Check the portal for the registration status of any AI API you plan to integrate.</p></div>
-<a class="src" href="https://theaiinsider.tech/2026/11/12/new-york-opens-registration-for-frontier-ai-labs-ahead-of-raise-act" target="_blank" rel="noopener">Read the full story on the source ↗</a>
-</div></details></article>
-<article class="post" data-part="1">
-<header class="post-head"><span class="av">🤖</span><div class="who"><b>Globe Newswire</b><span>AI tools · 4 of 24</span></div></header>
-<h3>Apify Adds AI Agent Features and Server Actors</h3>
-<div class="media stat"><div class="stat-num">267M</div><div class="stat-cap">AI tools</div></div>
-<p class="cap">Apify expands its AI workflow platform with natural‑language tool orchestration and server‑side Actors.</p>
-<details><summary><span class="more">See more</span><span class="less">See less</span></summary>
-<div class="detail"><div class="blk"><p class="lbl">📰 What happened</p><p>Apify announced major enhancements to its AI platform, including the ability to execute code, orchestrate multiple Actors, and build new Actors via natural‑language instructions. The updates also introduce Server Actors for always‑ready services. Weekly Actor runs have surpassed 267 million as of Oct 2026, a five‑fold increase since late 2025. The launch will be highlighted at Apify’s Run conference.</p></div><div class="blk"><p class="lbl">🎯 Why it matters to you</p><p>These tools let PC builders automate data scraping, API calls, and AI pipelines without manual scripting, saving time and boosting productivity.</p></div><div class="blk do"><p class="lbl">✅ What you can do</p><p>Sign up for Apify’s free tier and try creating an Actor using a simple natural‑language prompt.</p></div>
-<a class="src" href="https://finance.yahoo.com/technology/ai/articles/apify-unveils-ai-agent-capabilities-140000128.html" target="_blank" rel="noopener">Read the full story on Globe Newswire ↗</a>
-</div></details></article>
-<article class="post" data-part="1">
-<header class="post-head"><span class="av">🤖</span><div class="who"><b>BigDATAwire</b><span>Agent Management · 5 of 24</span></div></header>
-<h3>Data Platform Vendors Tackle Enterprise AI Agent Management</h3>
-<div class="media photo"><span class="ph-em" aria-hidden="true">🧠</span></div>
-<p class="cap">Dataiku and others roll out tools to register, monitor, and govern AI agents in businesses.</p>
-<details><summary><span class="more">See more</span><span class="less">See less</span></summary>
-<div class="detail"><div class="blk"><p class="lbl">📰 What happened</p><p>Dataiku launched its Agent Management product in September to let companies register AI agents, track activity, and monitor performance. It also introduced Headless to allow external coding agents within its governed environment. Oracle discussed agent control at its AI World conference in October. Other vendors like Snowflake and Databricks are developing similar solutions.</p></div><div class="blk"><p class="lbl">🎯 Why it matters to you</p><p>Helps Filipino builders and creators keep AI agents transparent and under control when integrating them into projects.</p></div><div class="blk do"><p class="lbl">✅ What you can do</p><p>Check Dataiku’s website for the Agent Management beta and consider trialing it for your AI workflows.</p></div>
-<a class="src" href="https://www.hpcwire.com/aiwire/2026/11/11/who-controls-enterprise-ai-agents-data-platform-vendors-race-to-provide-the-answer" target="_blank" rel="noopener">Read the full story on BigDATAwire ↗</a>
-</div></details></article>
-<article class="post" data-part="1">
-<header class="post-head"><span class="av">🤖</span><div class="who"><b>Help Net Security</b><span>AWS Tool · 6 of 24</span></div></header>
-<h3>AWS Emulator Built Entirely by AI Agents Released</h3>
-<div class="media photo"><span class="ph-em" aria-hidden="true">🧠</span></div>
-<p class="cap">AWS offers a free local emulator for testing cloud services, written by autonomous AI agents.</p>
-<details><summary><span class="more">See more</span><span class="less">See less</span></summary>
-<div class="detail"><div class="blk"><p class="lbl">📰 What happened</p><p>Amazon Web Services released AWS Emulator, a free tool that simulates AWS services on a laptop, server, or CI pipeline. The code was generated entirely by autonomous AI agents, with no human-written or reviewed code. Users only pay for actual AWS resources when they deploy. The emulator can be accessed via a coding agent, Linux package, Docker, or embedded mode.</p></div><div class="blk"><p class="lbl">🎯 Why it matters to you</p><p>Allows Filipino developers to test AWS apps locally without incurring cloud costs, speeding up development on mobile devices.</p></div><div class="blk do"><p class="lbl">✅ What you can do</p><p>Download the AWS Emulator from the AWS site and run a quick test using the Docker option.</p></div>
-<a class="src" href="https://www.helpnetsecurity.com/2026/11/12/aws-ai-agents-built-emulator" target="_blank" rel="noopener">Read the full story on Help Net Security ↗</a>
-</div></details></article>
-<article class="post" data-part="1">
-<header class="post-head"><span class="av">🤖</span><div class="who"><b>Cisco Press Release</b><span>AI Security · 7 of 24</span></div></header>
-<h3>Cisco Adds Red‑Team AI and Agent Observability Features</h3>
-<div class="media photo"><span class="ph-em" aria-hidden="true">🧠</span></div>
-<p class="cap">Cisco introduces Claude Mythos for AI red‑team testing and tools to monitor AI agent spend and performance.</p>
-<details><summary><span class="more">See more</span><span class="less">See less</span></summary>
-<div class="detail"><div class="blk"><p class="lbl">📰 What happened</p><p>Cisco announced the integration of Anthropic’s Claude Mythos into its AI Defense platform for adversarial red‑team testing of AI agents. It also launched token‑based cost governance that links AI spend to output quality, using data from Amazon Bedrock and CloudWatch. New Splunk Agent Observability and Cisco IQ enhancements provide real‑time threat detection and agent monitoring.</p></div><div class="blk"><p class="lbl">🎯 Why it matters to you</p><p>Provides security‑focused Filipino tech enthusiasts with tools to evaluate and control AI agent costs and risks in their projects.</p></div><div class="blk do"><p class="lbl">✅ What you can do</p><p>Explore Cisco’s AI Defense trial to see Claude Mythos in action and review tokenomics dashboards.</p></div>
-<a class="src" href="https://newsroom.cisco.com/c/r/newsroom/en/us/a/y2026/m11/cisco-unveils-frontier-ai-red-teaming-and-agent-observability-to-secure-the-agentic-enterprise.html" target="_blank" rel="noopener">Read the full story on Cisco Press Release ↗</a>
-</div></details></article>
-<article class="post" data-part="1">
-<header class="post-head"><span class="av">🤖</span><div class="who"><b>WTTW Chicago News</b><span>AI Policy · 8 of 24</span></div></header>
-<h3>Illinois Gov. Pritzker Calls for Federal AI Regulation</h3>
-<div class="media stat"><div class="stat-num">$500M</div><div class="stat-cap">AI Policy</div></div>
-<p class="cap">Pritzker proposes a 200‑point agenda for AI safety, privacy, and efficient data centers.</p>
-<details><summary><span class="more">See more</span><span class="less">See less</span></summary>
-<div class="detail"><div class="blk"><p class="lbl">📰 What happened</p><p>Illinois Governor JB Pritzker urged the incoming Democratic Congress to adopt a federal digital protection framework covering privacy, AI risk assessment, testing, monitoring, and energy‑efficient data centers. His plan includes a 200‑point agenda. Illinois recently joined New York and California with a law targeting AI models generating over $500 million in annual revenue.</p></div><div class="blk"><p class="lbl">🎯 Why it matters to you</p><p>Sets a precedent that could affect future AI regulations impacting cloud services and AI tools used by Filipino developers.</p></div><div class="blk do"><p class="lbl">✅ What you can do</p><p>Monitor federal AI policy news for updates that may affect compliance requirements.</p></div>
-<a class="src" href="https://news.wttw.com/2026/11/09/new-democratic-congress-incoming-pritzker-calls-federal-ai-regulations" target="_blank" rel="noopener">Read the full story on WTTW Chicago News ↗</a>
-</div></details></article></section>
-<section class="sec" id="pc" data-part="2">
-<header class="sec-head"><span class="sec-em">💻</span><div><p class="eyebrow">Section · 6 stories</p><h2>PC Parts</h2></div></header><article class="post" data-part="2">
-<header class="post-head"><span class="av">💻</span><div class="who"><b>Source</b><span>CPU Leak · 9 of 24</span></div></header>
-<h3>Intel Core Ultra 7 260K Appears on Newegg</h3>
-<div class="media stat"><div class="stat-num">5.4</div><div class="stat-cap">CPU Leak</div></div>
-<p class="cap">Unannounced Arrow Lake CPU listed in prebuilt PCs without Intel confirmation.</p>
-<details><summary><span class="more">See more</span><span class="less">See less</span></summary>
-<div class="detail"><div class="blk"><p class="lbl">📰 What happened</p><p>A new Intel Core Ultra 7 260K CPU shows up in multiple Newegg prebuilt gaming PCs. It is a down‑clocked version of the 265K, with 20 cores (8 P‑cores) and a 5.4 GHz boost. The chip keeps the same 125 W TDP and 30 MB L3 cache as the 265K. Intel has not released official specs or acknowledged the model.</p></div><div class="blk"><p class="lbl">🎯 Why it matters to you</p><p>Knowing about this hidden SKU helps builders spot potential deals or avoid unexpected hardware.</p></div><div class="blk do"><p class="lbl">✅ What you can do</p><p>Check Newegg listings for the 260K and compare its price to the 265K before buying.</p></div>
-<a class="src" href="https://www.tomshardware.com/pc-components/cpus/unannounced-intel-core-ultra-7-260k-cpu-surfaces-in-newegg-prebuilt-gaming-pcs-intel-doesnt-have-official-specs-list-available-for-exclusive-arrow-lake-chip" target="_blank" rel="noopener">Read the full story on the source ↗</a>
-</div></details></article>
-<article class="post" data-part="2">
-<header class="post-head"><span class="av">💻</span><div class="who"><b>Source</b><span>AI Rendering · 10 of 24</span></div></header>
-<h3>Apex Neural Rendering Beats DLSS in Tests</h3>
-<div class="media stat"><div class="stat-num">62%</div><div class="stat-cap">AI Rendering</div></div>
-<p class="cap">Beta of Apex Neural Rendering claims faster frame generation and lower VRAM use.</p>
-<details><summary><span class="more">See more</span><span class="less">See less</span></summary>
-<div class="detail"><div class="blk"><p class="lbl">📰 What happened</p><p>Apex Compute released a public beta of Apex Neural Rendering (ANR), an AI‑based frame‑generation tool. Benchmarks show ANR generates frames in 1.01 ms versus NVIDIA DLSS's 1.26 ms on an RTX 5090, a 62% reduction in VRAM usage (214 MB vs 562 MB at 4K). The software also supports older NVIDIA, AMD and Intel GPUs.</p></div><div class="blk"><p class="lbl">🎯 Why it matters to you</p><p>If you use AI upscaling, ANR could give smoother gameplay on current hardware and save VRAM for higher resolutions.</p></div><div class="blk do"><p class="lbl">✅ What you can do</p><p>Try the ANR beta on a compatible GPU and compare performance to DLSS.</p></div>
-<a class="src" href="https://www.tweaktown.com/news/114654/apex-neural-rendering-challenges-nvidia-dlss-with-faster-frame-generation-and-support-for-older-gpus/index.html" target="_blank" rel="noopener">Read the full story on the source ↗</a>
-</div></details></article>
-<article class="post" data-part="2">
-<header class="post-head"><span class="av">💻</span><div class="who"><b>Source</b><span>PC Deal · 11 of 24</span></div></header>
-<h3>Newegg Discounts RTX 5070 Gaming PC by $300</h3>
-<div class="media stat"><div class="stat-num">$1,799.99</div><div class="stat-cap">PC Deal</div></div>
-<p class="cap">iBUYPOWER Slate desktop now costs $1,799.99 after price cut.</p>
-<details><summary><span class="more">See more</span><span class="less">See less</span></summary>
-<div class="detail"><div class="blk"><p class="lbl">📰 What happened</p><p>Newegg reduced the price of the iBUYPOWER Slate gaming PC by $300, bringing the total to $1,799.99 from a $2,099.99 reference. The system includes an RTX 5070 12 GB GPU, Ryzen 7 8700F CPU, 16 GB DDR5 RAM, 1 TB NVMe SSD, 750 W PSU, Wi‑Fi, and an air cooler. A keyboard, mouse and monitor are not included.</p></div><div class="blk"><p class="lbl">🎯 Why it matters to you</p><p>The lower price makes a mid‑range 1440p gaming build more affordable for Filipino builders on a budget.</p></div><div class="blk do"><p class="lbl">✅ What you can do</p><p>Visit Newegg to verify the current price and consider the bundle if you need a ready‑made PC.</p></div>
-<a class="src" href="https://mixed-news.com/en/ibuypower-ryzen-7-8700f-rtx-5070-gaming-pc-300-off-newegg" target="_blank" rel="noopener">Read the full story on the source ↗</a>
-</div></details></article>
-<article class="post" data-part="2">
-<header class="post-head"><span class="av">💻</span><div class="who"><b>Source</b><span>Black Friday · 12 of 24</span></div></header>
-<h3>Early Black Friday Desktop Savings Highlighted</h3>
-<div class="media stat"><div class="stat-num">$100</div><div class="stat-cap">Black Friday</div></div>
-<p class="cap">Apple Mac Mini gets $100 off; Dell Business Tower sees over 40% discount.</p>
-<details><summary><span class="more">See more</span><span class="less">See less</span></summary>
-<div class="detail"><div class="blk"><p class="lbl">📰 What happened</p><p>Early Black Friday promotions list a $100 discount on Apple's Mac Mini and a 40%+ price cut on a Dell Business Tower desktop. Other highlighted deals include HP OmniDesk, Lenovo ThinkCentre, and HyperX Omen rigs with varying savings.</p></div><div class="blk"><p class="lbl">🎯 Why it matters to you</p><p>These early discounts let you lock in lower prices before the holiday rush, useful for building or upgrading a PC.</p></div><div class="blk do"><p class="lbl">✅ What you can do</p><p>Check the retailer sites now to claim the $100 Mac Mini discount or the Dell tower sale before stock runs out.</p></div>
-<a class="src" href="https://www.pcmag.com/deals/desktop-computer-pc-deals-early-black-friday-2026-acer-apple-lenovo" target="_blank" rel="noopener">Read the full story on the source ↗</a>
-</div></details></article>
-<article class="post" data-part="2">
-<header class="post-head"><span class="av">💻</span><div class="who"><b>Source</b><span>AI chips · 13 of 24</span></div></header>
-<h3>GPU vs TPU vs NPU: 4 AI Chip Camps</h3>
-<div class="media photo"><span class="ph-em" aria-hidden="true">🎮</span></div>
-<p class="cap">Four live AI accelerator camps are compared as of Nov 9, 2026.</p>
-<details><summary><span class="more">See more</span><span class="less">See less</span></summary>
-<div class="detail"><div class="blk"><p class="lbl">📰 What happened</p><p>Nvidia GPUs, Google TPUs, AMD Instinct accelerators and Apple/Qualcomm NPUs are the four active options. Google announced TPU 8tx and TPU 8i Max on Nov 9, 2026, with availability slated for 2027. Nvidia’s RTX Spark pairs a Blackwell GPU with a Grace CPU and up to 128 GB unified memory. AMD’s Instinct MI350P remains in OEM servers and cloud.</p></div><div class="blk"><p class="lbl">🎯 Why it matters to you</p><p>Choosing the right accelerator affects development time and cost for Filipino builders working on AI projects.</p></div><div class="blk do"><p class="lbl">✅ What you can do</p><p>Watch upcoming benchmark releases before committing to a platform.</p></div>
-<a class="src" href="https://shattered.io/gpu-vs-tpu-vs-npu-ai-chip-camps-compared-2026" target="_blank" rel="noopener">Read the full story on the source ↗</a>
-</div></details></article>
-<article class="post" data-part="2">
-<header class="post-head"><span class="av">💻</span><div class="who"><b>Source</b><span>Memory · 14 of 24</span></div></header>
-<h3>Unified Memory vs RAM: 128 GB Spark vs 1.2 TB/s Mac</h3>
-<div class="media stat"><div class="stat-num">$2,599</div><div class="stat-cap">Memory</div></div>
-<p class="cap">RTX Spark laptops launch with unified memory, challenging traditional RAM/VRAM splits.</p>
-<details><summary><span class="more">See more</span><span class="less">See less</span></summary>
-<div class="detail"><div class="blk"><p class="lbl">📰 What happened</p><p>RTX Spark laptops from six PC makers launched with a starting price of $2,599 and offer up to 128 GB unified memory at 300 GB/s bandwidth. Apple’s M5 Ultra provides up to 512 GB memory with 1.2 TB/s bandwidth, while the M6 chip tops at 170 GB/s. Discrete‑GPU laptops tested have only 8‑16 GB VRAM.</p></div><div class="blk"><p class="lbl">🎯 Why it matters to you</p><p>Unified memory can simplify builds and boost performance for AI workloads on thin laptops, relevant for budget‑conscious Filipino enthusiasts.</p></div><div class="blk do"><p class="lbl">✅ What you can do</p><p>Compare RTX Spark pricing with other laptops and decide if unified memory justifies the cost.</p></div>
-<a class="src" href="https://shattered.io/unified-memory-vs-ram-1-2-tb-s-mac-vs-128gb-rtx-spark-2026" target="_blank" rel="noopener">Read the full story on the source ↗</a>
-</div></details></article></section>
-<section class="sec" id="stocks" data-part="3">
-<header class="sec-head"><span class="sec-em">📈</span><div><p class="eyebrow">Section · 8 stories</p><h2>Stocks</h2></div></header><article class="post" data-part="3">
-<header class="post-head"><span class="av">📈</span><div class="who"><b>TipRanks</b><span>Nvidia downgrade · 15 of 24</span></div></header>
-<h3>NVDA Downgrades Ahead of Earnings</h3>
-<div class="media stat"><div class="stat-num">−2.01%</div>
-<div class="stat-cap">NVDA · last day · 5-day closes</div><div class="stat-chart"><svg viewBox="0 -4 178 114" width="178" height="114" role="img" aria-label="Last closing prices"><rect x="0" y="0.0" width="26" height="90.0" rx="4" fill="#4A4844"/><text x="13" y="106" text-anchor="middle" class="bar-l">179</text><rect x="38" y="47.0" width="26" height="43.0" rx="4" fill="#4A4844"/><text x="51" y="106" text-anchor="middle" class="bar-l">169</text><rect x="76" y="23.7" width="26" height="66.3" rx="4" fill="#4A4844"/><text x="89" y="106" text-anchor="middle" class="bar-l">174</text><rect x="114" y="60.0" width="26" height="30.0" rx="4" fill="#4A4844"/><text x="127" y="106" text-anchor="middle" class="bar-l">166</text><rect x="152" y="76.0" width="26" height="14.0" rx="4" fill="var(--sec)"/><text x="165" y="106" text-anchor="middle" class="bar-l">163</text></svg></div></div>
-<p class="cap">Analysts cut Nvidia ratings as CEO turmoil looms before the Nov 17 report.</p>
-<details><summary><span class="more">See more</span><span class="less">See less</span></summary>
-<div class="detail"><div class="blk"><p class="lbl">📰 What happened</p><p>Nvidia (NVDA) fell over 7% in Thursday pre‑market after a 2.87% gain during regular hours. Reports of possible removal of CEO Jensen Huang rattled investors ahead of Q3 FY27 earnings on Nov 17. Top analysts downgraded the stock, though Mizuho kept an Outperform rating. Average price target is $283.83, with EPS forecast $2.47 and revenue $108.84 billion.</p></div><div class="blk"><p class="lbl">🎯 Why it matters to you</p><p>The leadership uncertainty and earnings outlook directly affect AI chip demand, crucial for PC builders and AI enthusiasts.</p></div><div class="blk do"><p class="lbl">✅ What you can do</p><p>Watch the Nov 17 earnings release and related news before making any moves.</p></div>
-<a class="src" href="https://finance.yahoo.com/markets/stocks/articles/nvda-stock-price-forecast-top-204543429.html" target="_blank" rel="noopener">Read the full story on TipRanks ↗</a>
-</div></details></article>
-<article class="post" data-part="3">
-<header class="post-head"><span class="av">📈</span><div class="who"><b>The Manila Times</b><span>PSEi drop · 16 of 24</span></div></header>
-<h3>PSEi Slides as Peso Weakens</h3>
-<div class="media stat"><div class="stat-num">-1.18%</div><div class="stat-cap">PSEi drop</div></div>
-<p class="cap">Philippine index down 1.18% to 5,593.49; peso at ₱63.72 per dollar.</p>
-<details><summary><span class="more">See more</span><span class="less">See less</span></summary>
-<div class="detail"><div class="blk"><p class="lbl">📰 What happened</p><p>The PSEi fell 1.18% to 5,593.49, its lowest close this year, while the peso weakened to ₱63.72/USD, a third straight decline. Economists cite a stronger US dollar, higher US Treasury yields, and Fed rate‑hopes as drivers, plus lower crude oil and seasonal remittance flows.</p></div><div class="blk"><p class="lbl">🎯 Why it matters to you</p><p>Currency and index moves influence local tech stocks and the cost of importing PC components.</p></div><div class="blk do"><p class="lbl">✅ What you can do</p><p>Monitor the peso and PSEi trends before trading tech‑related stocks.</p></div>
-<a class="src" href="https://www.manilatimes.net/2026/11/14/business/top-business/psei-plunges-peso-ends-flat/2469777" target="_blank" rel="noopener">Read the full story on The Manila Times ↗</a>
-</div></details></article>
-<article class="post" data-part="3">
-<header class="post-head"><span class="av">📈</span><div class="who"><b>Nvidia</b><span>Valuation · 17 of 24</span></div></header>
-<h3>Nvidia Fair Value Trimmed</h3>
-<div class="media stat"><div class="stat-num">$319.99</div><div class="stat-cap">Valuation</div></div>
-<p class="cap">Analysts lower Nvidia's fair value to $319.99 amid mixed views.</p>
-<details><summary><span class="more">See more</span><span class="less">See less</span></summary>
-<div class="detail"><div class="blk"><p class="lbl">📰 What happened</p><p>Nvidia's fair‑value estimate was cut from $328.72 to $319.99 as analysts split over AI demand versus governance and financing concerns. Several firms trimmed price targets, though many still rate the stock positively, citing strong AI product roadmaps and backlogs.</p></div><div class="blk"><p class="lbl">🎯 Why it matters to you</p><p>A revised valuation changes expectations for AI chip performance, relevant to builders tracking GPU prices.</p></div><div class="blk do"><p class="lbl">✅ What you can do</p><p>Compare Nvidia's current market price to the new $319.99 fair value.</p></div>
-<a class="src" href="https://finance.yahoo.com/markets/stocks/articles/nvidia-nvda-stock-gets-fair-001720575.html" target="_blank" rel="noopener">Read the full story on Nvidia ↗</a>
-</div></details></article>
-<article class="post" data-part="3">
-<header class="post-head"><span class="av">📈</span><div class="who"><b>Bloomberg</b><span>Futures dip · 18 of 24</span></div></header>
-<h3>US Futures Slip on Nvidia Leadership Reports</h3>
-<div class="media stat"><div class="stat-num">-6%</div><div class="stat-cap">Futures dip</div></div>
-<p class="cap">Tech futures fall as Nvidia shares drop over 6% after leadership rumors.</p>
-<details><summary><span class="more">See more</span><span class="less">See less</span></summary>
-<div class="detail"><div class="blk"><p class="lbl">📰 What happened</p><p>Nasdaq 100 futures fell 0.9% (240 points) and S&amp;P 500 futures dropped 0.4% (32 points) on Thursday. Nvidia shares slid more than 6% in extended trading following reports that its board is weighing CEO Jensen Huang's future amid allegations. The moves coincide with higher‑than‑expected US inflation data raising expectations of a larger Fed rate hike in December.</p></div><div class="blk"><p class="lbl">🎯 Why it matters to you</p><p>Tech‑heavy futures react to Nvidia news, signaling broader market volatility that can affect AI‑related hardware purchases.</p></div><div class="blk do"><p class="lbl">✅ What you can do</p><p>Watch further Nvidia updates and market reactions before adjusting any tech‑stock positions.</p></div>
-<a class="src" href="https://finance.yahoo.com/markets/stocks/articles/us-stock-futures-decline-nvidia-100323595.html" target="_blank" rel="noopener">Read the full story on Bloomberg ↗</a>
-</div></details></article>
-<article class="post" data-part="3">
-<header class="post-head"><span class="av">📈</span><div class="who"><b>GMA News</b><span>PSEi dip · 19 of 24</span></div></header>
-<h3>PSEi Slides as Economy Grows 2.1% Q3</h3>
-<div class="media stat"><div class="stat-num">-1.46%</div><div class="stat-cap">PSEi dip</div></div>
-<p class="cap">Philippine benchmark index fell 84 points, 1.46%, amid weak Q3 growth.</p>
-<details><summary><span class="more">See more</span><span class="less">See less</span></summary>
-<div class="detail"><div class="blk"><p class="lbl">📰 What happened</p><p>The PSEi dropped 84.03 points to 5,677.92, a 1.46% decline on Nov 10. The All Shares index fell 34.79 points (1.08%) to 3,183.52. Trading volume hit 822.337 million shares worth ₱5.978 billion. GDP grew 2.1% in Q3, the slowest since Q1 2021, and the peso weakened to ₱63.31 per dollar.</p></div><div class="blk"><p class="lbl">🎯 Why it matters to you</p><p>Tech stocks listed on the PSEi are affected by overall market sentiment and a weaker peso, impacting PC‑building costs.</p></div><div class="blk do"><p class="lbl">✅ What you can do</p><p>Watch for next trading day’s market reaction before adjusting any tech‑stock positions.</p></div>
-<a class="src" href="https://www.gmanetwork.com/news/balitambayan/balita/1008904/2-1-economic-growth-sa-3rd-quarter-ng-2026-pinakamahina-umano-mula-noong-1st-quarter-ng-2021-na-/story" target="_blank" rel="noopener">Read the full story on GMA News ↗</a>
-</div></details></article>
-<article class="post" data-part="3">
-<header class="post-head"><span class="av">📈</span><div class="who"><b>Unknown</b><span>AI sell‑off · 20 of 24</span></div></header>
-<h3>AI and Chip Stocks Face Market Test</h3>
-<div class="media photo"><span class="ph-em" aria-hidden="true">📊</span></div>
-<p class="cap">Nvidia and other AI names tumble as investors gauge Fed rate outlook.</p>
-<details><summary><span class="more">See more</span><span class="less">See less</span></summary>
-<div class="detail"><div class="blk"><p class="lbl">📰 What happened</p><p>This week’s market sees a sell‑off in AI and semiconductor stocks. Nvidia fell amid a broader decline where the Dow dropped 1,800 points and the Nasdaq entered a correction. Analysts note the pullback could be a temporary shakeout or a deeper retreat, linked to data‑center spending outlook and inflation data influencing Fed rate‑hike expectations.</p></div><div class="blk"><p class="lbl">🎯 Why it matters to you</p><p>A pullback in AI chips can affect component prices and demand for PC‑building parts you source.</p></div><div class="blk do"><p class="lbl">✅ What you can do</p><p>Monitor upcoming Fed statements and AI earnings reports before buying new hardware.</p></div>
-<a class="src" href="https://finance.yahoo.com/markets/stocks/articles/stock-market-correction-crash-3-101459888.html" target="_blank" rel="noopener">Read the full story on Unknown ↗</a>
-</div></details></article>
-<article class="post" data-part="3">
-<header class="post-head"><span class="av">📈</span><div class="who"><b>Reuters</b><span>Tech weight · 21 of 24</span></div></header>
-<h3>Tech Sector Still Drives US Market Despite AI Slump</h3>
-<div class="media stat"><div class="stat-num">35%</div><div class="stat-cap">Tech weight</div></div>
-<p class="cap">Tech holds &gt;35% weight in S&amp;P 500 as earnings loom.</p>
-<details><summary><span class="more">See more</span><span class="less">See less</span></summary>
-<div class="detail"><div class="blk"><p class="lbl">📰 What happened</p><p>Despite a month‑long AI slump, technology remains the largest S&amp;P 500 sector, accounting for over 35% of market cap. Nvidia’s earnings are scheduled for Nov 17 and Dell’s for Nov 24. Analysts warn that weaker data‑center spending and political outcomes could pressure AI‑related stocks further.</p></div><div class="blk"><p class="lbl">🎯 Why it matters to you</p><p>Upcoming earnings from Nvidia and Dell can move GPU and component prices crucial for PC builders and AI hobbyists.</p></div><div class="blk do"><p class="lbl">✅ What you can do</p><p>Keep an eye on Nvidia’s Nov 17 earnings release for price signals.</p></div>
-<a class="src" href="https://www.reuters.com/business/tech-set-still-sway-us-stock-markets-course-despite-ai-driven-swoon-2026-11-09" target="_blank" rel="noopener">Read the full story on Reuters ↗</a>
-</div></details></article>
-<article class="post" data-part="3">
-<header class="post-head"><span class="av">📈</span><div class="who"><b>Yahoo Finance</b><span>NVDA dip · 22 of 24</span></div></header>
-<h3>Nvidia Shares Slip 4.34% on Nasdaq</h3>
-<div class="media stat"><div class="stat-num">-4.34%</div><div class="stat-cap">NVDA dip</div></div>
-<p class="cap">NVDA falls to $166.19, pre‑market down 13% ahead of earnings.</p>
-<details><summary><span class="more">See more</span><span class="less">See less</span></summary>
-<div class="detail"><div class="blk"><p class="lbl">📰 What happened</p><p>Nvidia closed at $166.19, down $7.54 (‑4.34%) on Nov 12. Pre‑market trading showed a sharper decline of $22.73 (‑13.08%) at $151.00. The company operates in AI data‑center and graphics segments, supplying GPUs for gaming and professional use.</p></div><div class="blk"><p class="lbl">🎯 Why it matters to you</p><p>Price volatility may affect the cost of Nvidia GPUs you consider for builds or resale.</p></div><div class="blk do"><p class="lbl">✅ What you can do</p><p>Watch post‑earnings price action before purchasing new Nvidia cards.</p></div>
-<a class="src" href="https://ca.finance.yahoo.com/quote/NVDA" target="_blank" rel="noopener">Read the full story on Yahoo Finance ↗</a>
-</div></details></article><p class="nfa">Not financial advice. Headlines only. Do your own research before you buy or sell.</p></section>
-<section class="sec" id="money" data-part="4">
-<header class="sec-head"><span class="sec-em">💰</span><div><p class="eyebrow">Section · 2 stories</p><h2>Money Radar</h2></div></header><article class="post" data-part="4">
-<header class="post-head"><span class="av">💰</span><div class="who"><b>GitHub</b><span>AI Code Review · 23 of 24</span></div></header>
-<h3>Alibaba Open Code Review Goes Open Source</h3>
-<div class="media stat"><div class="stat-num">49.5k</div><div class="stat-cap">AI Code Review</div></div>
-<p class="cap">AI‑powered code review CLI now open on GitHub with 49.5k stars.</p><p class="score"><span>Money score</span><span class="dots"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></span><b>4/5</b></p>
-<details><summary><span class="more">See more</span><span class="less">See less</span></summary>
-<div class="detail"><div class="blk"><p class="lbl">📰 What happened</p><p>Alibaba released its internal AI code review assistant as an open‑source project on GitHub. The repository shows 3.6k forks and 49.5k stars. It uses a hybrid architecture with deterministic pipelines and an LLM agent, supporting multi‑language rules and OpenAI/Anthropic models. Users configure a model endpoint to start reviewing code diffs.</p></div><div class="blk"><p class="lbl">🎯 Why it matters to you</p><p>Solo Filipino developers can monetize by offering fast, AI‑assisted code review services to local startups and freelancers.</p></div><div class="blk do"><p class="lbl">✅ What you can do</p><p>Set up the tool, run a few test reviews, and list a code‑review gig on platforms like Upwork or Fiverr.</p></div>
-<a class="src" href="https://github.com/alibaba/open-code-review" target="_blank" rel="noopener">Read the full story on GitHub ↗</a>
-</div></details></article>
-<article class="post" data-part="4">
-<header class="post-head"><span class="av">💰</span><div class="who"><b>Product Hunt</b><span>AI Social · 24 of 24</span></div></header>
-<h3>miingl.social Launches on Product Hunt</h3>
-<div class="media photo"><span class="ph-em" aria-hidden="true">⭐</span></div>
-<p class="cap">New AI social‑media manager seeks upvotes on Product Hunt.</p><p class="score"><span>Money score</span><span class="dots"><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i><i class=""></i></span><b>3/5</b></p>
-<details><summary><span class="more">See more</span><span class="less">See less</span></summary>
-<div class="detail"><div class="blk"><p class="lbl">📰 What happened</p><p>miingl.social was launched on Product Hunt on 13 November 2026. The post invites users to upvote, comment, and support the AI‑driven social‑media management tool. The launch message emphasizes a smarter, simpler way to manage social media with AI and thanks supporters for helping reach more people.</p></div><div class="blk"><p class="lbl">🎯 Why it matters to you</p><p>Early promotion can earn affiliate commissions or referral bonuses as the tool grows its user base.</p></div><div class="blk do"><p class="lbl">✅ What you can do</p><p>Visit the Product Hunt page, upvote the launch, and sign up for any affiliate or referral program offered.</p></div>
-<a class="src" href="https://www.facebook.com/groups/producthuntupvotes/posts/2077553306281423" target="_blank" rel="noopener">Read the full story on Product Hunt ↗</a>
-</div></details></article></section>
-<footer class="end"><p class="thirty">— 30 —</p><h2>That's all 24. You're caught up. ✅</h2><p>Close the app. Nothing important is left on your feed.</p>
+<h1>Daily <mark>News</mark></h1><p class="meta">Sun · Nov 15, 2026 · 0 stories</p></header>
+<nav class="bar" aria-label="Topics"><div class="circles"></div><div class="prog" aria-hidden="true"><i id="prog"></i></div><p class="readcount" id="rc"></p></nav>
+
+
+<p class="nfa">No stories could be loaded today.</p><div class="warnbox"><p>⚠️ No stories could be loaded today. Check the Tavily and Groq keys and limits.</p><p>⚠️ The &quot;topics&quot; table could not be read (missing or empty), so the 12 built-in topics were used.</p></div>
+
+<footer class="end"><p class="thirty">— 30 —</p><h2>You're caught up. ✅</h2><p>Close the app. Nothing important is left on your feed.</p>
 <a href="/jk-daily-news/archive/2026-11-14.html">← Yesterday</a><a href="/jk-daily-news/">Today</a></footer>
-</div><script>(function(){var b=document.getElementById('prog');function f(){var h=document.documentElement,m=h.scrollHeight-h.clientHeight;b.style.width=(m>0?Math.min(100,h.scrollTop/m*100):0)+'%'}addEventListener('scroll',f,{passive:true});f();
-var c=[].slice.call(document.querySelectorAll('.circle'));if('IntersectionObserver'in window){var o=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)c.forEach(function(x){x.classList.toggle('on',x.dataset.target===e.target.id)})})},{rootMargin:'-40% 0px -55% 0px'});document.querySelectorAll('.sec').forEach(function(s){o.observe(s)})}})();</script></body></html>
+</div>
+<div class="stbar" id="stbar"><div class="stseg" id="stseg"></div><div class="strow"><span id="stttl"></span><button type="button" id="stx" aria-label="Close stories">✕</button></div></div>
+<div class="stnav" id="stnav"><button type="button" id="stprev">← Back</button><button type="button" id="stnext">Next →</button></div>
+<script>(function(){var b=document.getElementById('prog');function f(){var h=document.documentElement,m=h.scrollHeight-h.clientHeight;b.style.width=(m>0?Math.min(100,h.scrollTop/m*100):0)+'%'}addEventListener('scroll',f,{passive:true});f();
+var c=[].slice.call(document.querySelectorAll('.circle'));if('IntersectionObserver'in window){var o=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)c.forEach(function(x){var on=x.dataset.target===e.target.id;x.classList.toggle('on',on);if(on&&x.scrollIntoView)x.scrollIntoView({block:'nearest',inline:'center'})})})},{rootMargin:'-40% 0px -55% 0px'});document.querySelectorAll('.sec').forEach(function(s){o.observe(s)})}
+var K='jk-read-2026-11-15',read={};try{read=JSON.parse(localStorage.getItem(K)||'{}')||{}}catch(e){read={}}
+var posts=[].slice.call(document.querySelectorAll('.post')),rc=document.getElementById('rc');
+function paint(){var n=0;posts.forEach(function(p){var on=!!read[p.id];p.classList.toggle('is-read',on);if(on)n++});if(rc)rc.textContent=n+' / '+posts.length+' read'}
+function save(){try{localStorage.setItem(K,JSON.stringify(read))}catch(x){}}
+var cur=-1,bar=document.getElementById('stbar'),nav=document.getElementById('stnav'),seg=document.getElementById('stseg'),ttl=document.getElementById('stttl'),nx=document.getElementById('stnext');
+function show(i){if(i<0)i=0;if(i>=posts.length){shut(true);return}posts.forEach(function(p){p.classList.remove('cur')});cur=i;var p=posts[i];p.classList.add('cur');p.scrollTop=0;document.body.classList.add('st');
+var part=p.getAttribute('data-part');bar.setAttribute('data-part',part);nav.setAttribute('data-part',part);var sec=p.parentNode,h='';[].slice.call(sec.querySelectorAll('.post')).forEach(function(s){h+='<i class="'+(posts.indexOf(s)<=i?'on':'')+'"></i>'});seg.innerHTML=h;
+ttl.textContent=sec.querySelector('.sec-head h2').textContent+' · '+(i+1)+' / '+posts.length;nx.textContent=i===posts.length-1?'Done ✅':'Next →'}
+function shut(end){var p=posts[cur];document.body.classList.remove('st');posts.forEach(function(x){x.classList.remove('cur')});cur=-1;var f=end?document.querySelector('.end'):p;if(f&&f.scrollIntoView)f.scrollIntoView({block:end?'start':'center'})}
+function step(d){if(cur<0)return;if(d>0&&!read[posts[cur].id]){read[posts[cur].id]=1;save();paint()}show(cur+d)}
+document.addEventListener('click',function(e){var c=function(s){return e.target.closest?e.target.closest(s):null},t;
+if(t=c('.readbtn')){var id=t.getAttribute('data-read');if(read[id])delete read[id];else read[id]=1;save();paint();return}
+if(c('#ststart')){var u=0;for(var i=0;i<posts.length;i++){if(!read[posts[i].id]){u=i;break}}show(u);return}
+if(t=c('.short a')){var j=posts.indexOf(document.getElementById(t.getAttribute('href').slice(1)));if(j>=0){e.preventDefault();show(j)}return}
+if(c('#stx')){shut(false);return}if(c('#stprev')){step(-1);return}if(c('#stnext')){step(1);return}
+if(cur>=0&&(t=c('.post.cur .media'))){var r=t.getBoundingClientRect();step(e.clientX-r.left>r.width/2?1:-1)}});
+addEventListener('keydown',function(e){if(cur<0)return;if(e.key==='ArrowRight')step(1);if(e.key==='ArrowLeft')step(-1);if(e.key==='Escape')shut(false)});
+var x0=null,y0=null;addEventListener('touchstart',function(e){if(cur<0)return;x0=e.touches[0].clientX;y0=e.touches[0].clientY},{passive:true});
+addEventListener('touchend',function(e){if(cur<0||x0===null)return;var dx=e.changedTouches[0].clientX-x0,dy=e.changedTouches[0].clientY-y0;x0=null;if(Math.abs(dx)>60&&Math.abs(dx)>Math.abs(dy)*1.5)step(dx<0?1:-1)},{passive:true});
+paint()})();</script></body></html>
